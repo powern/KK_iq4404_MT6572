@@ -2225,8 +2225,8 @@ void msg2133_init_class()
 
 
 #ifdef TPD_CLOSE_POWER_IN_SLEEP	 
-	hwPowerDown(TPD_POWER_SOURCE,"TP");
-	hwPowerOn(TPD_POWER_SOURCE,VOL_2800,"TP");
+	hwPowerDown(TPD_POWER_SOURCE_CUSTOM,"TP");
+	hwPowerOn(TPD_POWER_SOURCE_CUSTOM,VOL_2800,"TP");
 	msleep(100);
 #else
 
@@ -2374,7 +2374,7 @@ void msg2133_init_class()
  
    TPD_DMESG("TPD wake up\n");
 #ifdef TPD_CLOSE_POWER_IN_SLEEP	
-	hwPowerOn(TPD_POWER_SOURCE,VOL_2800,"TP");
+	hwPowerOn(TPD_POWER_SOURCE_CUSTOM,VOL_2800,"TP");
 #endif
 	msleep(100);
 	mt_set_gpio_mode(GPIO_CTP_RST_PIN, GPIO_CTP_RST_PIN_M_GPIO);
@@ -2405,7 +2405,7 @@ void msg2133_init_class()
     mt_set_gpio_out(GPIO_CTP_RST_PIN, GPIO_OUT_ZERO);  
 	 
 #ifdef TPD_CLOSE_POWER_IN_SLEEP	
-	hwPowerDown(TPD_POWER_SOURCE,"TP");
+	hwPowerDown(TPD_POWER_SOURCE_CUSTOM,"TP");
 #else
 	//TP enter sleep mode----XB.PANG NEED CHECK
 	//if have sleep mode
