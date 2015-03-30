@@ -22,6 +22,7 @@
 #include <linux/ktime.h>
 #include <linux/xlog.h>
 #include <mach/upmu_common.h>
+#include <linux/mutex.h>
 
 #include <mach/mt_gpio.h>		// For gpio control
 #include <mach/mt_pwm.h>
@@ -68,8 +69,10 @@ static BOOL g_strobe_On = 0;
 static int g_duty=-1;
 static int g_step=-1;
 static int g_timeOutTimeMs=0;
+static DEFINE_MUTEX(g_strobeSem);
 
 static struct work_struct workTimeOut;
+
 /*****************************************************************************
 Functions
 *****************************************************************************/
@@ -124,7 +127,7 @@ int flashpwm = 0;
 
 int fl_set_pwm_disable(void)
 {
-	mt_pwm_disable(PWM1, false);
+	mt_pwm_disable(PWM4, false);
 	return 0;	
 }
 //end add by ljs 20130703
