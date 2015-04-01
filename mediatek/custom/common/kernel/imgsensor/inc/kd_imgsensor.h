@@ -84,7 +84,7 @@
 /* SENSOR CHIP VERSION */
 #define OV5645MIPI_SENSOR_ID                    0x5645
 #define OV5646MIPI_SENSOR_ID                    0x5646
-//#define OV5645AFMIPI_SENSOR_ID                    0x5643
+#define OV5645AFMIPI_SENSOR_ID                    0x5643
 #define OV5646AFMIPI_SENSOR_ID                    0x5644
 #define MC501CB_SENSOR_ID                       0x0062
 #define MC501CC_SENSOR_ID                       0x0074
@@ -201,7 +201,7 @@
 #define HIVICF_SENSOR_ID                        0x0081
 #define HI253_SENSOR_ID                         0x0092
 #define HI704_SENSOR_ID                         0x0096
-//#define SP0A19_SENSOR_ID                        0x00a6
+#define SP0A19_SENSOR_ID                        0x00a6
 
 #define IMX058_SENSOR_ID                        0x0058
 #define IMX073_SENSOR_ID                        0x0046
@@ -237,7 +237,7 @@
 /* SENSOR DEVICE DRIVER NAME */
 #define SENSOR_DRVNAME_OV5645_MIPI_YUV "ov5645mipiyuv"
 #define SENSOR_DRVNAME_OV5646_MIPI_YUV "ov5645_mipi_yuv_darling"
-//#define SENSOR_DRVNAME_OV5645AF_MIPI_YUV "ov5645_mipi_yuv_truly_af"
+#define SENSOR_DRVNAME_OV5645AF_MIPI_YUV "ov5645_mipi_yuv_truly_af"
 #define SENSOR_DRVNAME_OV5646AF_MIPI_YUV "ov5645_mipi_yuv_darling_af"
 #define SENSOR_DRVNAME_MT9P012_RAW  "mt9p012"
 #define SENSOR_DRVNAME_MT9P015_RAW  "mt9p015"

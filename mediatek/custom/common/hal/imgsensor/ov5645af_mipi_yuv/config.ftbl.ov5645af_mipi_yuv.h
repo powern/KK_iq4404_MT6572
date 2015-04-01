@@ -95,11 +95,11 @@ FTABLE_SCENE_INDEP()
     FTABLE_CONFIG_AS_TYPE_OF_DEFAULT_VALUES(
         KEY_AS_(MtkCameraParameters::KEY_PICTURE_SIZE), 
         SCENE_AS_DEFAULT_SCENE(
-            ITEM_AS_DEFAULT_("2560x1712"), 
+            ITEM_AS_DEFAULT_("3072x1728"), 
             ITEM_AS_VALUES_(                                                 
                 "320x240",      "640x480",      "1024x768",     "1280x720",     "1280x768",     "1280x960",     "1440x960",               
-                "1600x960",     "1600x1200",    "2048x1152",    "2048x1360",    "2048x1536",    "2560x1440",    "2560x1712",
-                "2560x1920",    "2880x1728",
+                "1600x960",     "1600x1200",    "2048*1536",    "2624x1968",    "1536x864",	"1792x1008",	"2304x1296",
+                "3072x1728",
             )
         ), 
     )
@@ -181,12 +181,12 @@ FTABLE_SCENE_INDEP()
     FTABLE_CONFIG_AS_TYPE_OF_DEFAULT_VALUES(
         KEY_AS_(MtkCameraParameters::KEY_ANTIBANDING), 
         SCENE_AS_DEFAULT_SCENE(
-            ITEM_AS_DEFAULT_(MtkCameraParameters::ANTIBANDING_50HZ),
+            ITEM_AS_DEFAULT_(MtkCameraParameters::ANTIBANDING_OFF), 
             ITEM_AS_VALUES_(
-                //MtkCameraParameters::ANTIBANDING_OFF,
+                MtkCameraParameters::ANTIBANDING_OFF, 
                 MtkCameraParameters::ANTIBANDING_50HZ, 
                 MtkCameraParameters::ANTIBANDING_60HZ, 
-                //MtkCameraParameters::ANTIBANDING_AUTO,
+                MtkCameraParameters::ANTIBANDING_AUTO, 
             )
         ), 
     )
@@ -257,9 +257,10 @@ FTABLE_SCENE_INDEP()
             ITEM_AS_DEFAULT_(MtkCameraParameters::CAPTURE_MODE_NORMAL), 
             ITEM_AS_VALUES_(
                 MtkCameraParameters::CAPTURE_MODE_NORMAL,
-                MtkCameraParameters::CAPTURE_MODE_CONTINUOUS_SHOT,
+                MtkCameraParameters::CAPTURE_MODE_BURST_SHOT,
                 MtkCameraParameters::CAPTURE_MODE_SMILE_SHOT,
-                MtkCameraParameters::CAPTURE_MODE_AUTO_PANORAMA_SHOT, 
+                MtkCameraParameters::CAPTURE_MODE_AUTO_PANORAMA_SHOT,
+                MtkCameraParameters::CAPTURE_MODE_CONTINUOUS_SHOT,
             )
         ), 
     )

@@ -242,11 +242,11 @@ static long mt_pwm_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 
 //	PWM_SET_BITS(0x3, 0xf702fc80);
 //	PWM_CLR_BITS(0x2, 0xf702fc80);
-	static int iii=0;
-	if (iii == 0) {
+//	static int iii=0;
+//	if (iii == 0) {
 //		mt_power_on(PWM1);mt_power_on(PWM2);mt_power_on(PWM3);
-		iii = 1;
-	}
+//		iii = 1;
+//	}
 
 //	mt_set_pwm_eco();
 

@@ -78,7 +78,7 @@ static void work_timeOutFunc(struct work_struct *data);
 #define LEDS_CUSTOM_MODE_THRES 	20
 
 #ifndef GPIO_CAMERA_FLASH_EN_PIN
-#define GPIO_CAMERA_FLASH_EN_PIN GPIO24
+#define GPIO_CAMERA_FLASH_EN_PIN GPIO15
 #endif
 
 #ifndef GPIO_CAMERA_FLASH_EN_PIN_M_GPIO
@@ -86,7 +86,7 @@ static void work_timeOutFunc(struct work_struct *data);
 #endif
 
 #ifndef GPIO_CAMERA_FLASH_MODE_PIN
-#define GPIO_CAMERA_FLASH_MODE_PIN GPIO25
+#define GPIO_CAMERA_FLASH_MODE_PIN GPIO30
 #endif
 
 #ifndef GPIO_CAMERA_FLASH_MODE_PIN_M_GPIO

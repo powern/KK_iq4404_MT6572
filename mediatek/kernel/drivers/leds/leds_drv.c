@@ -43,7 +43,7 @@
  * variables
  ***************************************************************************/
 struct cust_mt65xx_led* bl_setting = NULL;
-static unsigned int bl_brightness = 102;
+static unsigned int bl_brightness = 130;
 static unsigned int bl_duty = 21;
 static unsigned int bl_div = CLK_DIV1;
 static unsigned int bl_frequency = 32000;

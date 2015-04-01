@@ -66,7 +66,7 @@ extern void mt65xx_eint_registration(unsigned int eint_num, unsigned int is_deb_
 
 #define POWER_NONE_MACRO MT65XX_POWER_NONE
 
-/* TEMPLATE */
+/* 
 #define GPIO_ALS_EINT_PIN         GPIO190
 #define GPIO_ALS_EINT_PIN_M_GPIO  GPIO_MODE_00
 #define GPIO_ALS_EINT_PIN_M_EINT  GPIO_MODE_01
@@ -76,7 +76,7 @@ extern void mt65xx_eint_registration(unsigned int eint_num, unsigned int is_deb_
 #define CUST_EINT_ALS_POLARITY         CUST_EINT_POLARITY_LOW
 #define CUST_EINT_ALS_SENSITIVE        CUST_EINT_LEVEL_SENSITIVE
 #define CUST_EINT_ALS_DEBOUNCE_EN      CUST_EINT_DEBOUNCE_DISABLE
-
+*/
 
 
 /******************************************************************************

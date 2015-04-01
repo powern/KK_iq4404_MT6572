@@ -150,6 +150,13 @@ static int brightness_set_pwm(int pwm_num, enum led_brightness level,struct PWM_
 		level -= 32;
 		pwm_setting.pwm_mode.PWM_MODE_FIFO_REGS.SEND_DATA0 = (1 << level) - 1 ;
 		pwm_set_spec_config(&pwm_setting);
+	}else if(level > 64 && level <= 256)
+	{
+		pwm_setting.pwm_mode.PWM_MODE_FIFO_REGS.GUARD_VALUE = 2;
+		for (; level >32;)
+		  level -= 32;
+		pwm_setting.pwm_mode.PWM_MODE_FIFO_REGS.SEND_DATA0 = (1 << level) - 1 ;
+		pwm_set_spec_config(&pwm_setting);
 	}else
 	{
 		printf("[LEDS]Error level in backlight\n");
